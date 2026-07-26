@@ -1,0 +1,58 @@
+# Root .gitignore — references subdirectory .gitignore files and covers global patterns.
+# See: frontend/project/.gitignore (Node.js / Vite / React)
+# See: backend/voice-agent-backend/.gitignore (Python / uv / FastAPI)
+
+# ─────────────────────────────────────────────
+# Environment & Secrets
+# ─────────────────────────────────────────────
+# Both .env and .env.local are gitignored in their respective subdirectory
+# .gitignore files. They must never appear here.
+.env
+.env.local
+
+# ─────────────────────────────────────────────
+# Database & Data Files
+# ─────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+*.mp3
+*.wav
+*.ogg
+*.opus
+*.aac
+*.webm
+
+# ─────────────────────────────────────────────
+# Build / Runtime Artifacts (apply to both sides)
+# ─────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+node_modules/
+dist/
+dist-ssr/
+
+# ─────────────────────────────────────────────
+# IDE / OS
+# ─────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─────────────────────────────────────────────
+# Logs
+# ─────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
