@@ -73,7 +73,7 @@ The LLM agent is a **smolagents ToolCallingAgent** that uses two tools:
 | `resolve_date` | Converts relative dates ("tomorrow", "next Monday") into `YYYY-MM-DD` |
 | `create_dental_appointment` | Books an appointment after validating email, date, and time |
 
-The agent is given a detailed system prompt that defines "Priya" — a warm, professional dental receptionist — and instructs it to never break character or reveal its tools.
+The agent is given a detailed system prompt that defines "Priya", a warm, professional virtual receptionist. Priya is open about being an AI: asked whether it is a bot, it says so and offers a follow-up from the clinic team. It never reads internal tool names aloud.
 
 ### 2. Frontend Flow
 
